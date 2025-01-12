@@ -10,6 +10,14 @@ body {
     overflow-x: hidden;
     margin: 0;
 }
+
+#lbPagos{
+
+ font-weight: 900;
+ font-size: 12px;
+ 
+}
+
 @font-face {
     font-family: xd;
     src: url('fonts/6680-fontps.ttf');
