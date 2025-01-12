@@ -382,6 +382,17 @@ footer label {
 }
 
 
+@media screen and (max-width:350px) {
+    .dvI1{
+      
+
+    }
+
+    .dvI label{
+        font-size: 14px;
+    }
+
+}
 
 @media screen and (max-width:400px) {
 
