@@ -5,7 +5,6 @@ const fsSync = require('fs'); // Añade esta líne
 const path = require('path');
 const app = express();
 const nodemailer = require('nodemailer');
-const port = 3000;
 
 // Ruta al archivo de tickets
 const ticketsPath = path.join(__dirname, 'tickets.json');
@@ -197,4 +196,8 @@ app.post('/api/pedidos', async (req, res) => {
 //     console.log(`Servidor corriendo en http://localhost:${port}`);
 // });
 
-module.exports = app;
+// Configuración del puerto
+const port = process.env.PORT || 3000;
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Servidor corriendo en puerto ${port}`);
+});
