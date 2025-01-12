@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     fb.addEventListener('click', () => {
    
-        window.location.href = "https://wa.me/+584120528940"
+        window.location.href = "https://wa.me/+5804121360306"
 
     })
 
