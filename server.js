@@ -193,6 +193,8 @@ app.post('/api/pedidos', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Servidor corriendo en http://localhost:${port}`);
+// });
+
+module.exports = app;
