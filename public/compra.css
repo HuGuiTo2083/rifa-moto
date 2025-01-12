@@ -1,0 +1,188 @@
+body {
+    background: linear-gradient(to bottom, #ffff, #eeecec, #c4c4c4);
+    width: 100%;
+    background-attachment: fixed;
+    /* Hace que el fondo se mueva con el scroll */
+    background-size: cover;
+    /* Asegura que el fondo cubra toda la pantalla */
+    background-repeat: no-repeat;
+    /* El fondo no se repite */
+    overflow-x: hidden;
+    margin: 0;
+}
+@font-face {
+    font-family: xd;
+    src: url('fonts/6680-fontps.ttf');
+}
+.dvSuccess{
+    width: 200px;
+    height: 90px;
+    font-size: 12px;
+    font-weight: 900;
+    color:#1a4f16;
+    background-color: #70df68;
+    border-radius: 1rem;
+    display: flex;
+    
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+    padding-top: 20px;
+    display: none;
+    margin-bottom: 20px;
+}
+
+#btPedir{
+    background-color: #4d2671;
+    border-radius: 1rem;
+    color: white;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 140px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.dvImage{
+    margin-top: 50px;
+   width: 100%;
+   height:1000px;
+   background-color: rgb(165, 94, 236);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 70px;
+}
+
+.lbForm2{
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: xd;
+    font-weight: 900;
+    text-align: center;
+
+
+}
+
+.dvImage img{
+    width: 50%;
+    height: 800px;
+}
+
+.dvForm{
+    width: 100%;
+    height: 1000px;
+    display: inline-block;
+    
+    
+
+}
+
+.col{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 300px;
+    height: 70px;
+    background-color: #e8c9f6;
+    border: none;
+    border-radius: 3rem;
+   text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.contador-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contador-input {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.contador-input::-webkit-inner-spin-button,
+.contador-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.botones-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    
+}
+
+.btn-contador {
+    width: 30px;
+    height: 30px;
+    background-color: #a550f5;
+    border: 2px solid #ccc;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 0;
+}
+
+.btn-contador:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-contador:active {
+    background-color: #d0d0d0;
+}
+
+.lbForm{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color:#4d2671;
+    text-align: center;;
+}
+
+
+@media screen and (max-width: 400px){
+    .dvImage{
+       width: 100%;
+       height:600px;
+       
+    }
+    .dvImage img{
+        width: 80%;
+        height: 400px;
+    }
+
+    .dvSuccess{
+        margin-top: 100px;
+        margin-left: 150px;
+    }
+}

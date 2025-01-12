@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa - Alex</title>
+    <link href="compra.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div class="dvImage">
+        <img src="images/testimonio10.jpg">
+        <label class="lbForm2">Ford Fiesta 2011 Automático</label>
+
+    </div>
+
+    <div class="contador-container">
+        <input type="number" id="contador" class="contador-input" value="1" min="1">
+        <div class="botones-container">
+            <button class="btn-contador" id="incrementar">+</button>
+            <button class="btn-contador" id="decrementar">-</button>
+        </div>
+        <label id="precio" class="precio-label lbForm">98 bs</label>
+    </div>
+
+    <form class="dvForm" id="pedidoForm">
+
+      
+        <div class="col"><label class="lbForm">Nombre:</label></div>
+
+        <div class="col"><input type="text" placeholder="Nombre" id="inName"> </input></div>
+        <div class="col"><label class="lbForm" >Apellidos:</label></div>
+        <div class="col"><input type="text" placeholder="Apellidos" id="inLastName"> </input></div>
+        <div class="col"><label class="lbForm">Correo Electrónico:</label></div>
+        <div class="col"><input type="email" placeholder="Correo" id="inEmail"> </input></div>
+        <div class="col"><label class="lbForm">Últimos 4 números de Referencia de Pago:</label></div>
+        <div class="col"><input type="number" placeholder="4 números de Referencia" id="inFor"> </input></div>
+        <div class="col"><label class="lbForm">Whatsapp:</label></div>
+        <div class="col"><input type="number" placeholder="Ingresa tu Whatsapp" id="inNumber"> </input></div>
+        <div class="col"><button id="btPedir" type="submit">Realizar Compra</button></div>
+    </form>
+
+    <div class="dvSuccess" id="dvSuccess">Compra registrada, durante
+                       <br>un lapso de 24 horas se 
+                       <br>aprobará y se te enviará
+                       <br>un correo con los datos
+                       <br>de tu compra.
+    </div>
+
+    <script src="compra.js"></script>
+
+</body>
+
+</html>

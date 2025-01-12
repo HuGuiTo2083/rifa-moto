@@ -1,0 +1,32 @@
+[
+  {
+    "correo": "21240723@leon.tecnm.mx",
+    "nombre": "Hugo Ubaldo",
+    "apellido": "Hernandez Murillo",
+    "referencias": 1234,
+    "numero": 4779082327,
+    "aprobado": false,
+    "boletos": 2,
+    "precioTotal": 196
+  },
+  {
+    "correo": "21240723@leon.tecnm.mx",
+    "nombre": "Hector",
+    "apellido": "Hernandez",
+    "referencias": 4321,
+    "numero": 4779082327,
+    "aprobado": false,
+    "boletos": 1,
+    "precioTotal": 98
+  },
+  {
+    "correo": "21240723@leon.tecnm.mx",
+    "nombre": "Hugo Ubaldo",
+    "apellido": "Hernandez Murillo",
+    "referencias": 1111,
+    "numero": 4779082327,
+    "aprobado": false,
+    "boletos": 2,
+    "precioTotal": 196
+  }
+]

@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(to bottom, #ffff, #eeecec, #c4c4c4);
+    width: 100%;
+    background-attachment: fixed;
+    /* Hace que el fondo se mueva con el scroll */
+    background-size: cover;
+    /* Asegura que el fondo cubra toda la pantalla */
+    background-repeat: no-repeat;
+    /* El fondo no se repite */
+    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+  width: 350px;
+  height: 300px;
+  border-radius: 2rem;
+  background-color: #6a1e79;
+  position: relative;
+  top: 100px;
+  display: flex;
+  
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 120px;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 100px;
+    height: 50px;
+    border-radius: 1rem;
+    border: solid rgb(119, 107, 123) 4px;
+    font-size: 15px;
+    text-align: center;
+}
+
+input::placeholder{
+    font-size: 15px;
+    text-align: center;
+}
+
+button{
+    background-color: #9b2cb1;
+    cursor: pointer;
+    border-radius: 2rem;
+    color: white;
+    font-weight: 900;
+    font-size: 10px;
+    transition: 0.3s;
+    width: 100px;
+    height: 50px;
+}
+
+button:hover{
+    background-color: #bc48d3;
+}

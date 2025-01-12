@@ -1,0 +1,61 @@
+body {
+    background: linear-gradient(to bottom, #dcc3f5, #ba8bd1, #a973d0);
+    width: 100%;
+    background-attachment: fixed;
+    /* Hace que el fondo se mueva con el scroll */
+    background-size: cover;
+    /* Asegura que el fondo cubra toda la pantalla */
+    background-repeat: no-repeat;
+    /* El fondo no se repite */
+    overflow-x: hidden;
+    margin: 0;
+}
+
+#contenedorPedidos{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.aprobado{
+    border: solid rgb(28, 107, 28) 5px;
+    background-color: #85f474;
+}
+
+.pendiente{
+    border: solid rgb(83, 18, 88) 5px;
+    background-color: #d7b0f7;
+}
+
+@font-face {
+    font-family: xd;
+    src: url('fonts/6680-fontps.ttf');
+}
+
+.dvPedido{
+    width: 230px;
+    height: 240px;
+    border-radius: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    margin-left: 70px;
+    
+}
+
+.btnAprobar{
+    width: 100px;
+    height: 30px;
+    border-radius: 1rem;
+    background-color: #58ff3f;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    margin-top: 20px;
+    margin-left: 60px;
+}

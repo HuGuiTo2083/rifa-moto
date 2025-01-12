@@ -1,0 +1,485 @@
+body {
+    background: linear-gradient(to bottom, #ffff, #eeecec, #c4c4c4);
+    width: 100%;
+    background-attachment: fixed;
+    /* Hace que el fondo se mueva con el scroll */
+    background-size: cover;
+    /* Asegura que el fondo cubra toda la pantalla */
+    background-repeat: no-repeat;
+    /* El fondo no se repite */
+    overflow-x: hidden;
+    margin: 0;
+}
+
+@font-face {
+    font-family: ligh;
+    src: url('fonts/Light.ttf');
+}
+
+.header {
+
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.dvMenu {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+#imgLogo {
+    object-fit: cover;
+    height: 80%;
+    margin-left: 30px;
+    border-radius: 1rem;
+}
+
+.dvButtonsContact {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+#svgW{
+    position: relative;
+    left: 7px;
+}
+
+.circularButton {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid #000 3px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.circularButton:hover,
+.circularButton:hover~.icon {
+    border: solid #9d35ff 3px;
+    fill: #9d35ff;
+
+}
+
+.dvReferences {
+    background: linear-gradient(90deg, #d88bf0, #ff7cde);
+    width: 100%;
+    height: 1050px;
+    box-shadow:
+        0 -50px 150px -30px rgba(216, 139, 240, 1),
+        /* Sombra superior más intensa */
+        0 50px 150px -30px rgba(255, 124, 222, 1),
+        /* Sombra inferior más intensa */
+        0 0 180px 70px rgba(216, 139, 240, 0.4),
+        /* Sombra difusa alrededor del contenedor */
+        0 0 180px 70px rgba(255, 124, 222, 0.4),
+        /* Sombra difusa alrededor del contenedor */
+        0 -10px 30px -5px rgba(216, 139, 240, 0.8),
+        /* Sombra sólida cerca de la orilla superior */
+        0 10px 30px -5px rgba(255, 124, 222, 0.8),
+        /* Sombra sólida cerca de la orilla inferior */
+        0 -20px 60px -15px rgba(216, 139, 240, 0.6),
+        /* Gradiente de sombra hacia la izquierda */
+        0 20px 60px -15px rgba(255, 124, 222, 0.6),
+        /* Gradiente de sombra hacia la derecha */
+        0 -30px 90px -25px rgba(216, 139, 240, 0.5),
+        /* Gradiente de sombra hacia la izquierda */
+        0 30px 90px -25px rgba(255, 124, 222, 0.5);
+    /* Gradiente de sombra hacia la derecha */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: comic;
+    src: url('fonts/6680-fontps.ttf');
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #992aaf;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dvI {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.dvReferences label {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: comic;
+    color: #38176e
+}
+
+
+#lbAlex{
+    font-size: 60px;
+}
+
+#imgPremio {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.dvPremio {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#lb1 {
+    margin-bottom: 30px;
+}
+
+.information {
+    width: 100%;
+    height: 700px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.information p {
+    margin-top: '';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#lb2 {
+    font-size: 24px;
+    color: #c23be3;
+}
+
+#buyTicket {
+    background-color: #38176e;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 3rem;
+    width: 200px;
+    height: 70px;
+    margin-top: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#buyTicket:hover {
+    background-color: #5c339f;
+    transform: translateY(-7px);
+
+}
+
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    touch-action: pan-x;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-slide img {
+    width: 65%;
+    height: 700px;
+    object-fit: cover;
+
+}
+
+.carousel-button {
+    position: absolute;
+
+    transform: translateY(-50%);
+    background: rgba(190, 58, 250);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    width: 50px;
+    z-index: 10;
+    font-weight: 900;
+    border-radius: 50%;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button {
+    left: 1rem;
+}
+
+.next-button {
+    right: 1rem;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+
+#references2 {
+    margin-top: 40px;
+    background: linear-gradient(90deg, #d88bf0, #ff7cde);
+    width: 100%;
+    height: 1100px;
+    margin-bottom: 50px;
+    box-shadow:
+        0 -50px 150px -30px rgba(216, 139, 240, 1),
+        /* Sombra superior más intensa */
+        0 50px 150px -30px rgba(255, 124, 222, 1),
+        /* Sombra inferior más intensa */
+        0 0 180px 70px rgba(216, 139, 240, 0.4),
+        /* Sombra difusa alrededor del contenedor */
+        0 0 180px 70px rgba(255, 124, 222, 0.4),
+        /* Sombra difusa alrededor del contenedor */
+        0 -10px 30px -5px rgba(216, 139, 240, 0.8),
+        /* Sombra sólida cerca de la orilla superior */
+        0 10px 30px -5px rgba(255, 124, 222, 0.8),
+        /* Sombra sólida cerca de la orilla inferior */
+        0 -20px 60px -15px rgba(216, 139, 240, 0.6),
+        /* Gradiente de sombra hacia la izquierda */
+        0 20px 60px -15px rgba(255, 124, 222, 0.6),
+        /* Gradiente de sombra hacia la derecha */
+        0 -30px 90px -25px rgba(216, 139, 240, 0.5),
+        /* Gradiente de sombra hacia la izquierda */
+        0 30px 90px -25px rgba(255, 124, 222, 0.5);
+    /* Gradiente de sombra hacia la derecha */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #333;
+}
+
+.information2 {
+    width: 100%;
+    height: 920px;
+    margin-bottom: 100px;
+    padding-left: 10px;
+}
+
+.dvContador {
+    width: 100%;
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: #ffffff;
+    background-color: #38176e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.information2 p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+
+}
+
+.information2 span {
+    font-size: 19px;
+    color: #c23be3;
+
+}
+
+.dvInfoFinal p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+
+}
+
+.dvInfoFinal span {
+    font-size: 19px;
+    color: #cd51ec;
+
+}
+
+.dvInfoFinal {
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    padding-left: 10px;
+
+}
+
+footer label {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:400px) {
+
+.information{
+  margin-bottom: 50px;
+
+
+}
+#references2{
+    height: 600px;
+}
+
+.information2{
+    margin-bottom: 50px;
+    
+  
+  }
+
+
+    .carousel-slide img {
+        width: 80%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #imgPremio {
+        width: 95%;
+        height: 400px;
+    }
+
+    .dvPremio {
+        margin-bottom: 8px;
+    }
+
+    .dvReferences label {
+        font-size: 40px;
+        font-weight: 900;
+        font-family: comic;
+        color: #38176e;
+        text-align: center;
+    }
+
+
+
+    .dvI {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .dvMenu {
+        gap: 0px;
+        margin-left: 40px;
+        padding-right: 0;
+    }
+
+    .header img {
+        height: 60px;
+        width: 95px;
+    }
+
+    .header {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .header a {
+        font-size: 15px;
+    }
+
+    .dvI1 {
+        margin-top: 0px;
+    }
+}
+
+
+
+@media screen and (max-width:390px) {
+    .dvReferences label {
+        font-size: 35px;
+
+    }
+
+    .dvReferences {
+        margin-top: 30px;
+        padding-top: 20px;
+    }
+
+    .dvI1 {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width:388px) {
+    .information2{
+      height: 900px;  
+      margin-bottom: 100px; 
+    }
+
+}
